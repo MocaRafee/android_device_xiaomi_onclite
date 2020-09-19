@@ -362,6 +362,9 @@ PRODUCT_PACKAGES += \
     camera.msm8953_shim \
     libshim_dpmframework
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
