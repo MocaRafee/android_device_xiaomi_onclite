@@ -18,10 +18,10 @@ java_library {
     name: "org.ifaa.android.manager",
     installable: true,
     srcs: [
-        "src/**/*.java",
-        "src/**/I*.aidl",
+        "IFAA-Manager/src/**/*.java",
+        "IFAA-Manager/src/**/I*.aidl",
     ],
     aidl: {
-        local_include_dirs: ["src"],
+        local_include_dirs: ["IFAA-Manager/src"],
     },
 }
