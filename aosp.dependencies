@@ -1,21 +1,15 @@
 [
  {
-   "remote":       "github",
-   "repository":   "AlpacaGang/kernel_xiaomi_onclite",
-   "target_path":  "kernel/xiaomi/onclite",
-   "revision":     "ten"
+   "repository"   : "device_xiaomi_onclite",
+   "target_path"  : "device/xiaomi/onclite"
  },
  {
-   "remote":       "github",
-   "repository":   "PixelPlusUI-Devices/vendor_xiaomi_onclite",
-   "target_path":  "vendor/xiaomi/onclite",
-   "revision":     "ten"
+   "repository"   : "vendor_xiaomi_onclite",
+   "target_path"  : "vendor/xiaomi/onclite"
  },
  {
-   "remote":       "github",
-   "repository":   "kdrag0n/proton-clang",
-   "target_path":  "prebuilts/clang/host/linux-x86/clang-11.0",
-   "target_path":  "prebuilts/clang/host/linux-x86/clang-12.0",
-   "revision":     "master"
- },
+   "repository"   : "kernel_xiaomi_onclite",
+   "target_path"  : "kernel/xiaomi/onclite"
+ }
 ]
+
