@@ -6,10 +6,10 @@
     "remote": "github"
   },
   {
-"remote": "priv",
-    "repository": "Risti699/Jflaa",
+    "repository": ""MumetNgoding/BrynKernel-AOSP",
     "target_path": "kernel/xiaomi/onclite",
-    "branch": "11",
+    "branch": "R",
+    "remote": "github"
   },
 {
         "remote"	    : "github",
