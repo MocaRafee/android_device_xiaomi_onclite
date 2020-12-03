@@ -18,6 +18,7 @@ $(call inherit-product, packages/apps/NusantaraParts/nadproject.mk)
 
 NAD_BUILD_TYPE := OFFICIAL
 USE_PIXEL_CHARGING := true
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nad_onclite
@@ -34,8 +35,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
 

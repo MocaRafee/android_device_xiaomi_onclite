@@ -27,9 +27,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=288
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1520
-TARGET_SCREEN_WIDTH := 720
+#Boot animation
+#TARGET_SCREEN_HEIGHT := 1520
+#TARGET_SCREEN_WIDTH := 720
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
