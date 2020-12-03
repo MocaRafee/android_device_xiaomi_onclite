@@ -200,6 +200,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Treble
 BOARD_VNDK_VERSION := current
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
