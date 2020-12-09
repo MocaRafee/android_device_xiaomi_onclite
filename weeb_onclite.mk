@@ -12,12 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-
-# Set Bootanimation Resolution.
-IS_PHONE := true
-TARGET_BOOT_ANIMATION_RES := 720
+# Inherit some common WeebProjekt stuff.
+$(call inherit-product, vendor/weeb/config/common_telephony_phone.mk)
+WEEB_BUILD_TYPE := EXPERIMENTAL
 
 # GApps Configuration.
 WITH_GAPPS := true
@@ -25,12 +22,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-# Evolution X Configuration.
-EVO_BUILD_TYPE := UNOFFICIAL
-
-EVO_DONATE_URL := https://t.me/elizabethangelalorenza
-EVO_MAINTAINER := elizabethangelalorenza
-EVO_SUPPORT_URL := https://t.me/EvolutionX
+# Set Bootanimation Resolution.
+IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
@@ -39,7 +33,7 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 7
 PRODUCT_DEVICE := onclite
-PRODUCT_NAME := evolution_onclite
+PRODUCT_NAME := weeb_onclite
 
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.201205.010/6953398:user/release-keys"
 
