@@ -12,16 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some common NusantaraROM stuff
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-$(call inherit-product, packages/apps/NusantaraParts/nadproject.mk)
-
-NAD_BUILD_TYPE := OFFICIAL
-USE_PIXEL_CHARGING := true
+# Inherit some common Evolution X stuff.
+EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 720
+WITH_GAPPS := true
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_onclite
+PRODUCT_NAME := evolution_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
